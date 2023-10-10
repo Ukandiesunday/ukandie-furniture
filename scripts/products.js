@@ -92,3 +92,14 @@ desc:"Lounge sofa grey for cool relaxation",
 img:"data/lounge-sofa-grey.webp"
 },
 ]
+
+ export const client = [
+  {img:"data/client-1.jpg",
+info:"A message from Mr Peter. I want to return a hand full accolades to ukandie furniture for turning my home into a comfortable place.Each time I look around I'd feel statisfied."},
+  {img:"data/client2.jpg",
+info:"(Prince Abel).A great shout out to ukandie furniture services for  turning their creativity into realizing a paradise for my living room"},
+  {img:"data/client3.jpg",
+info:"From Mrs John; I can not forget to thank ukandie furniture for my interior decorations"},
+  {img:"data/client4.jpg",
+info:"Smith's room. my apartment has become one of the best in the world via ukandie furniture handy works"},
+]

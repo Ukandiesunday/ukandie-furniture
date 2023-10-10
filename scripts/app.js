@@ -1,4 +1,4 @@
-import { products } from "./products.js";
+import { products, client } from "./products.js";
 
 // To toggle the menu icon
 const menuToggle = document.querySelector(".menu-toggle");
@@ -58,5 +58,48 @@ function displayMenuBtns (){
      `
    }).join("");
  }
+const header = document.querySelector(".header-text");
+ const headerTxt = document.querySelector(".header-text1");
+ window.addEventListener("load",()=>{
+  header.classList.add("text1");
+  headerTxt.classList.add("text2");
+ })
 
- const bgColor = docuemn
+ // Showing slideshow images of our clients' homes
+const img = document.getElementById("img");
+const info = document.querySelector(".info");
+const nextBtn = document.querySelector(".next-btn");
+const  prevBtn = document.querySelector(".prev-btn");
+const randomBtn = document.querySelector(".ran-btn");
+
+let myIndex = 0;
+window.addEventListener("DOMContentLoaded",()=>{
+  showClient();
+})
+
+function showClient(){
+  const item = client[myIndex];
+  img.src = item.img;
+  info.textContent= item.info;
+}
+
+nextBtn.addEventListener("click",()=>{
+  myIndex ++
+  if(myIndex > client.length-1){
+    myIndex = 0
+  } 
+  showClient()
+})
+
+prevBtn.addEventListener("click",()=>{
+  myIndex --
+  if(myIndex < 0){
+    myIndex = client.length-1;
+  } 
+  showClient()
+})
+
+randomBtn.addEventListener("click",()=>{
+  myIndex = Math.floor(Math.random() * client.length)
+  showClient()
+})
