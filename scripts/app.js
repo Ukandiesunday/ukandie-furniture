@@ -53,7 +53,7 @@ function displayMenuBtns (){
      <p class="name">${item.name}</p>
      <p class="price">${item.price}</p>
      <p class="desc">${item.desc}</p>
-     <p class="read">Read More</p>
+     <p class="read">Shop/Rent now</p>
      </div>
      `
    }).join("");
@@ -103,3 +103,8 @@ randomBtn.addEventListener("click",()=>{
   myIndex = Math.floor(Math.random() * client.length)
   showClient()
 })
+
+//To display current year 
+const span = document.querySelector(".span");
+const year = new Date().getFullYear();
+span.textContent = `Copy right ${year}`

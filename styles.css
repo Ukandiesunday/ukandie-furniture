@@ -21,6 +21,7 @@ body{
   --black-01:#000;
   --ff:Arial, Helvetica, sans-serif;
   --grey:grey;
+  --red:#ff0000;
 }
 
 /* ************Menu******************* */
@@ -179,6 +180,45 @@ body{
   padding-inline:10px;
   border-radius:3px;
   cursor: pointer;
-
 }
-
+/***************Form******************/
+#form{
+  margin-top:6rem;
+  
+}
+form{
+  display:flex;
+  justify-content: center;
+  align-items: first baseline;
+  flex-wrap:wrap;
+  flex-direction: column;
+  background:rgb(252, 246, 246);
+  padding:20px;
+  border-radius:10px;
+}
+.text{
+  color:var(--red);
+  font-size:20px;
+  margin-bottom:20px;
+  padding-right:20px;
+  text-align: left;;
+}
+input,textarea{
+  font-size:16px;
+  padding:4px;
+  border-radius:5px;
+}
+.btn{
+  font-size:17px;
+  padding-inline:20px;
+  padding-block:4px;
+}
+#footer{
+  padding: 30px 0;
+  text-align: center;
+  background:var(--light-blue-01);
+ 
+}
+#footer span{
+  color:var(--red);
+}
