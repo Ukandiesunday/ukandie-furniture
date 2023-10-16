@@ -6,28 +6,29 @@
   <title>Furniture App</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="header.css">
+  <script src="https://kit.fontawesome.com/cbc94a0dc0.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="nav-bar">
       <div class="nav-flex">
         <img src="data/morden-leisure.webp" class="logo">
         <ul class="nav-ul">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Avertisement</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Service">Services</a></li>
+          <li><a href="#Chairs">Chairs</a></li>
+          <li><a href="#Tables">Tables</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
         <div class="menu-toggle">
           <div class="menu-icon"></div>
         </div>
       </div>
     </nav>
-    <span class="span1">BUY</span>
-    <span class="span2">RENT</span>
-    <span class="span3">LEARN</span>
+    <span class="span1 span-d">BUY</span>
+    <span class="span2 span-d">RENT</span>
+    <span class="span3 span-d">LEARN</span>
     <h1 class="header-text">Welcome To Ukandie Furniture Services</h1>
     <h2 class="header-text1">QUICK DELIVERY AND ASSEMBLY SERVICES</h2>
     <p>Comfort is the best price you can pay yourself, meet us and get comfortable in your offices and homes.</p>
@@ -35,7 +36,9 @@
   <!------------Menu------------->
   <div id="menu">
     <div class="container">
-      <h3 class="sub-header">Explore Categories Of Our Catalogue</h3>
+      <h3 class="sub-header">
+        Explore Categories Of Our Catalogue
+      </h3>
       <div class="btns-container">
       </div>
       <div class="menu-grid menu">
@@ -43,21 +46,12 @@
     </div>
   </div>
   <!-------------Factory Description--------------->
-  
-  <div class="chat"><a href="">chat with us on</a><br>
-    Whatsapp
+  <div class="chat"><a href="https://wa.me/09078512087">chat with us on<br><i class="fa-brands fa-whatsapp"></i>
+    Whatsapp</a>
   </div>
-  <div id="form">
-    <div class="container">
-      <p class="text">Book an appointment with us for your offices & home interior designs</p>
-      <form>
-        <input type="text" placeholder="Your Name" required><br>
-        <input type="text" placeholder="Phone Number" required><br>
-        <input type="text" placeholder="Email" required><br>
-          <textarea name="" id="" cols="30" rows="10" placeholder="send us a message for interior plan and assembly." required></textarea><br>
-          <button type="submit" class="btn">Submit</button>
-      </form>
-    </div>
+  <div class="search">
+    <h4>Search Alternative</h4>
+    <input type="text" placeholder="e.g Chairs, Tables, Tv-Shelves" id="input">
   </div>
   <div id="factory">
     <div class="container">
@@ -80,12 +74,13 @@
   <!------------------client review------------------>
   <div id="client">
     <div class="container">
-      <h2 class="sub-header">Our Clients' Rooms and Interior</h2>
+      <h2 class="sub-header">Reviews of Our Clients' Rooms and Interior</h2>
       <div class="row">
         <div class="img-container">
           <img id="img" src="data/client-1.jpg">
         </div>
         <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nobis.</p>
+        <p class="customer">Mr. Kennedy Joy</p>
         <div class="btn-container">
           <button class="prev-btn">&#10094</button>
           <button class="ran-btn">Random</button>
@@ -94,7 +89,45 @@
       </div> 
     </div>
   </div>
+  <span class="top-link">Back To Top</span>
+  <div id="form">
+    <div class="container">
+      <div class="container-flex">
+        <form>
+          <h3 class="text">Get on the list so   we can stay in touch</h3>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="text" placeholder="Phone Number" required><br>
+            <input type="text" placeholder="Email Address" required><br>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Send us a message for interior plan and assembly." required></textarea><br>
+              <button type="submit" class="btn">Submit</button>
+          </form>
+          <div class="contact">
+            <h2>Contact Us</h2>
+            <p>156. Regency South Street, Victoria Island Lagos</p>
+            <p>ukandieudo@gmail.com</p>
+            <p>+234-9053588942</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+      </div>
+    
+    </div>
+  </div>
+  <!---------------Footer------------------->
   <div id="footer">
+    <div class="footer-flex">
+      <div class="col1">
+        <p>Privacy</p>
+        <p>Terms and conditions</p> 
+        <p>Delivery</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="clo2">
+        <p>Chairs</p>
+        <p>Tables</p>
+        <p>Tv-Shelves</p>
+      </div>
+    </div>
     <div class="footer">
       <p> &copy;<span class="span"></span>: Coded by &lt;ukandieSunday  /&gt;</p>
     </div>

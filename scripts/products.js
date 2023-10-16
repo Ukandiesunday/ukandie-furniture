@@ -85,21 +85,35 @@ desc:" Single seater bucket chair sofa arm-chair",
 img:"data/bucket-chair.webp"
 },
 {id:"id13",
-category:"Chairs",
-name:"Lounge Sofa",
-price:"105,000",
-desc:"Lounge sofa grey for cool relaxation",
-img:"data/lounge-sofa-grey.webp"
+category:"Tv-Shelves",
+name:"Tv-shelf with console",
+price:"25,000",
+desc:"Tv-shelf with white console.",
+img:"data/tv-console.jpg"
 },
+{id:"id14",
+category:"Tv-Shelves",
+name:"tv-shelf",
+price:"28,550",
+desc:"Lounge sofa grey for cool relaxation",
+img:"data/tv-shelf2.jpg"
+}
 ]
+
+
 
  export const client = [
   {img:"data/client-1.jpg",
-info:"A message from Mr Peter. I want to return a hand full accolades to ukandie furniture for turning my home into a comfortable place.Each time I look around I'd feel statisfied."},
+info:" I want to return a hand full accolades to ukandie furniture for turning my home into a comfortable place.Each time I look around I'd feel statisfied.",
+name:"Mr. Peter Harrison, Lagos Nigeria"
+},
   {img:"data/client2.jpg",
-info:"(Prince Abel).A great shout out to ukandie furniture services for  turning their creativity into realizing a paradise for my living room"},
+info:"A great shout out to ukandie furniture services for  turning their creativity into realizing a paradise for my living room, I have used their products for many years and they are awesome.",
+name:"Mrs. Benson Charley, Abuja"},
   {img:"data/client3.jpg",
-info:"From Mrs John; I can not forget to thank ukandie furniture for my interior decorations"},
+info:"I can not forget to thank ukandie furniture for my interior decorations, their talented staff and designers painstakenly work through my desires.",
+name:"Mr. John"},
   {img:"data/client4.jpg",
-info:"Smith's room. my apartment has become one of the best in the world via ukandie furniture handy works"},
+info:" My apartment has become one of the best in the world via ukandie furniture handy works, I totally recommend them for any one who needs a captiviting and durable furniture",
+name:"Mr.Smith Peter, Ghana"}
 ]
