@@ -135,7 +135,7 @@ ul  a:hover::after{
   position:fixed;
   left:-250px;
   top:4.5rem;
-  z-index:3;
+  z-index:-1;
   transition:var(--transition-2);
   }
   ul.toggle-sidebar{
@@ -145,6 +145,11 @@ ul  a:hover::after{
     display:block;
     margin:25px;
     padding-left:20px;
+  }
+
+  .list p{
+    font-size:20px;
+    font-weight: 500;
   }
 }
 
@@ -169,7 +174,7 @@ ul  a:hover::after{
  margin:15px; 
 }
 #client{
-  margin:15px 10%;
+  padding:90px 10%;
 }
 .info{
   margin:15px 0;
@@ -177,5 +182,69 @@ ul  a:hover::after{
 }
 .customer{
 font-size:19px;
+margin:10px 30px;
 color:var(--light-blue-01);
+}
+
+.container{
+  opacity:0;
+}
+.container.show-review{
+opacity:1;
+transform:scale(1.07);
+transition:all 4s;
+}
+.container-form{
+  padding:20px 10%;
+}
+
+#form{
+  margin-top:6rem;
+  background-color:var( --light-blue-04)
+}
+form{
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  flex-direction: column;
+  padding:20px;
+  border-radius:10px;
+}
+.text{
+  color:var(--red);
+  font-size:20px;
+  margin-bottom:20px;
+  padding-right:20px;
+  text-align: left;
+  text-transform: capitalize;
+}
+input,textarea{
+  font-size:16px;
+  padding:10px;
+  border-radius:5px;
+  border:none;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+
+:is(input,textarea)::placeholder{
+  color:var(--light-blue-01);
+}
+:is(input,textarea):focus{
+  outline:var(--light-blue-01);
+  caret-color: var(--red)
+}
+.btn{
+  font-size:17px;
+  padding:10px;
+  background: var(--light-blue-01);
+  color:var(--white);
+  border:none;
+  border-radius:5px;
+  transition:var(--transition-01);
+  cursor: pointer;
+  display:block;
+  margin: 0 auto;
+}
+.btn:hover{
+  outline:5px solid var(--blue-01);
 }

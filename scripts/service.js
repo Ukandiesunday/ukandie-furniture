@@ -1,21 +1,26 @@
 import {client} from "./products.js"
 
 const nav = document.querySelector(".nav-bar");
-window.onscroll = function(){
- const scrollHeight = window.scrollY;
-  scrollHeight > 200 ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
-}
+const review = document.querySelector(".container");
+
 const sideBar = document.querySelector(".nav-ul");
 const menuIcon = document.querySelector(".menu-toggle");
+
+window.onscroll = function(){
+ const scrollHeight = window.scrollY;
+  scrollHeight > 100 ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
+  scrollHeight > 400 ? review.classList.add("show-review"):review.classList.remove("show-review");
+
+  scrollHeight & sideBar.classList.remove("toggle-sidebar")||menuIcon.classList.remove("toggle");
+}
+
 menuIcon.addEventListener("click",()=>{
  menuIcon.classList.toggle("toggle");
  sideBar.classList.toggle("toggle-sidebar")
 })
 
-const info = document.querySelector(".info")
-const image = document.getElementById("img")
-const nextBtn = document.querySelector(".next-btn")
-const prevBtn = document.querySelector(".prev-btn")
+const info = document.querySelector(".info");
+const image = document.getElementById("img");
 const name = document.querySelector(".customer")
 
 let myIndex = 0;
@@ -36,8 +41,9 @@ setInterval(()=>{
     myIndex = 0;
   }  
   displayImg();
-},2000)
+},5000)
  
+
 
 
 

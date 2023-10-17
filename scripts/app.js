@@ -15,15 +15,19 @@ const topLink = document.querySelector(".top-link");
 const nav = document.querySelector(".nav-bar");
 window.onscroll = function(){
   const scrollHeight = window.scrollY;
-scrollHeight > 200 ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
+  const navHeight = nav.getBoundingClientRect().height;
+scrollHeight > navHeight ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
 
 scrollHeight > 500 ? topLink.classList.add("show-link"):topLink.classList.remove("show-link");
+
+scrollHeight & sideBar.classList.remove("toggle-sidebar")||menuToggle.classList.remove("toggle");
 
 topLink.addEventListener("click",()=>{
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 })
 }
+// To show perspective design
 setInterval(()=>{
   const fullDesign = document.querySelectorAll(".span-d");
   fullDesign.forEach((show)=>{
@@ -94,7 +98,6 @@ const info = document.querySelector(".info");
 const customer = document.querySelector(".customer");
 const nextBtn = document.querySelector(".next-btn");
 const  prevBtn = document.querySelector(".prev-btn");
-const randomBtn = document.querySelector(".ran-btn");
 
 let myIndex = 0;
 window.addEventListener("DOMContentLoaded",()=>{

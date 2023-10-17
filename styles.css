@@ -200,21 +200,25 @@ font-size:20px;
 
 .top-link{
   position:fixed;
-  bottom:-200px;
+  bottom:-100px;
   right:40px;
   transition:all 1s;
   background-color:var(--gold);
- padding:14px;
+ padding:7px;
  border-radius:7px;
   cursor: pointer;
   color:var(--white);
 }
 .top-link:hover{
-  outline:5px solid var(--blue-01);
+  outline:3px solid var(--blue-01);
+}
+
+.fa-angle-up{
+  font-size:30px;
 }
  
 .top-link.show-link{
-  bottom:200px;
+  bottom:100px;
 }
 /***************Form******************/
 #form{
