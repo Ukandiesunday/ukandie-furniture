@@ -15,7 +15,7 @@ const topLink = document.querySelector(".top-link");
 const nav = document.querySelector(".nav-bar");
 window.onscroll = function(){
   const scrollHeight = window.scrollY;
-scrollHeight > 400 ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
+scrollHeight > 200 ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
 
 scrollHeight > 500 ? topLink.classList.add("show-link"):topLink.classList.remove("show-link");
 
@@ -80,7 +80,7 @@ function displayMenuBtns (){
      `
    }).join("");
  }
- 
+
 const header = document.querySelector(".header-text");
  const headerTxt = document.querySelector(".header-text1");
  window.addEventListener("load",()=>{
