@@ -172,11 +172,11 @@ body{
   padding-inline:10px;
 }
 .btn-container{
-  margin:20px 0;
-  padding:10px;
+  margin:30px auto;
+  padding:10px 10%;
   display:flex;
+  gap:15px;
   justify-content: space-between;
-  margin-inline:50px;
 }
 .prev-btn,
 .next-btn{
@@ -318,7 +318,5 @@ input, textarea{
 .container p{
   font-size:20px;
 }
-.prev-btn,.next-btn{
-  margin-inline:20px;
-}
+
 }
