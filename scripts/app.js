@@ -13,14 +13,16 @@ menuToggle.addEventListener("click", ()=>{
 // To apply fixed navBar
 const topLink = document.querySelector(".top-link");
 const nav = document.querySelector(".nav-bar");
+const reviewClient = document.querySelector(".client");
 window.onscroll = function(){
   const scrollHeight = window.scrollY;
   const navHeight = nav.getBoundingClientRect().height;
 scrollHeight > navHeight ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
-
-scrollHeight > 500 ? topLink.classList.add("show-link"):topLink.classList.remove("show-link");
+console.log(scrollHeight)
 
 scrollHeight & sideBar.classList.remove("toggle-sidebar")||menuToggle.classList.remove("toggle");
+
+scrollHeight > 500 ? topLink.classList.add("show-link"):topLink.classList.remove("show-link");
 
 topLink.addEventListener("click",()=>{
   document.body.scrollTop = 0;
