@@ -51,8 +51,8 @@ function displayMenuBtns (){
  
    categories.map((category)=>{
     buttons.innerHTML += `<button class="btns" data-category = ${category}>${category}</button>`
-   })
- 
+   });
+  
    const filteredbtn = document.querySelectorAll(".btns");
    filteredbtn.forEach((btn)=>{
      btn.addEventListener("click",(event)=>{
@@ -61,13 +61,15 @@ function displayMenuBtns (){
        item.category === category
       );
       if(category === "All"){
-       displayMenu(products)
-      }else{
-       displayMenu(filteredProducts)
-      }
-     });
-   });
+        displayMenu(products)
+       }else{
+        displayMenu(filteredProducts)
+       }
+      }) 
+   })
 }
+
+
 
  const menu = document.querySelector(".menu");
  function displayMenu (items){
@@ -79,7 +81,7 @@ function displayMenuBtns (){
      <p class="name">${item.name}</p>
      <p class="price">${item.price}</p>
      <p class="desc">${item.desc}</p>
-     <p class="btns"><a href="/">Order/Rent</a></p>
+     <p class="btns"><a href="service.html">Order/Rent</a></p>
      </div>
      `
    }).join("");
@@ -137,7 +139,6 @@ function showRandomPerson(){
 const span = document.querySelector(".span");
 const year = new Date().getFullYear();
 span.textContent = `Copy right ${year}`
-const scrollHeigh = window.scrollY
-console.log(scrollHeigh)
+
 
 

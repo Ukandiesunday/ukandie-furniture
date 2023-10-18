@@ -14,7 +14,7 @@
   --white:#fff;
   --red:red;
   --transition-1:all 0.5s;
-  --transition-2:all 0.7s;
+  --transition-2:all 0.3s;
   --gold:gold;
   --light-blue-03:rgb(175, 175, 238);
 }
@@ -175,9 +175,10 @@ header p {
   background-color:var(--light-blue-01);
   position:fixed;
   left:-250px;
-  top:4.5rem;
-  z-index:3;
+  top:4rem;
+  z-index:-3;
   transition:var(--transition-2);
+  padding-top:10px;
   }
   ul.toggle-sidebar{
     left:0px;

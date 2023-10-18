@@ -8,7 +8,7 @@ const menuIcon = document.querySelector(".menu-toggle");
 
 window.onscroll = function(){
  const scrollHeight = window.scrollY;
-  scrollHeight > 100 ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
+  scrollHeight > 50 ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
   scrollHeight > 400 ? review.classList.add("show-review"):review.classList.remove("show-review");
 
   scrollHeight & sideBar.classList.remove("toggle-sidebar")||menuIcon.classList.remove("toggle");
@@ -30,11 +30,9 @@ image.src = item.img;
 info.textContent = item.info;
 name.textContent = item.name;
 }
-
 window.addEventListener("DOMContentLoaded",()=>{
   displayImg();
 })
-
 setInterval(()=>{
   myIndex ++
   if(myIndex > client.length-1){
@@ -43,6 +41,10 @@ setInterval(()=>{
   displayImg();
 },5000)
  
+//To display current year 
+const span = document.querySelector(".span");
+const year = new Date().getFullYear();
+span.textContent = `Copy right ${year}`
 
 
 

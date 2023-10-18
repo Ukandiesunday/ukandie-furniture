@@ -14,7 +14,7 @@
   --white:#fff;
   --red:red;
   --transition-1:all 0.5s;
-  --transition-2:all 0.7s;
+  --transition-2:all 0.3s;
   --gold:gold;
   --light-blue-03:rgb(175, 175, 238);
 }
@@ -134,7 +134,7 @@ ul  a:hover::after{
   background-color:var(--light-blue-01);
   position:fixed;
   left:-250px;
-  top:4.5rem;
+  top:4rem;
   z-index:-1;
   transition:var(--transition-2);
   }
@@ -207,7 +207,6 @@ form{
   justify-content: center;
   flex-wrap:wrap;
   flex-direction: column;
-  padding:20px;
   border-radius:10px;
 }
 .text{
@@ -223,7 +222,7 @@ input,textarea{
   padding:10px;
   border-radius:5px;
   border:none;
-  box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+  box-shadow: 0 0 5px rgba(0,0,0, 0.2);
 }
 
 :is(input,textarea)::placeholder{
@@ -248,3 +247,74 @@ input,textarea{
 .btn:hover{
   outline:5px solid var(--blue-01);
 }
+h1,h2,h3{
+  color:var(--light-blue-01)
+}
+
+.contact{
+  padding:40px 10%;
+  text-align: center;
+}
+.home{
+  border-radius:5px;
+  text-align: right;
+  margin:0 10px 20px;
+}
+.home a{
+  padding:6px;
+  background-color: var(--light-blue-01);
+  text-decoration: none;
+  color:var(--white);
+  font-size:18px;
+cursor: pointer;
+}
+.contact p {
+margin:10px;
+}
+p i{
+  margin-right:6px;
+}
+
+.footer-flex{
+  display:flex;
+  flex-wrap: wrap;
+  margin:20px auto;
+  justify-content: center;
+  align-items:center;
+  margin-right:100px;
+}
+.col1,.col2{
+  flex-basis:40%;
+  font-size:15px;
+}
+#footer{
+  padding: 10px 0 40px 0;
+  text-align: center;
+  background:var(--light-blue-01);
+}
+#footer span{
+  color:var(--red);
+}
+
+.contact h2{
+  text-align: center;
+}
+@media (max-width:768px){
+  input, textarea{
+    font-size:18px;
+  }
+  .container p{
+    font-size:25px;
+    line-height:35px;
+  }
+  .contact p{
+    font-size:20px;
+    line-height:35px;
+  };
+  h1,h2,h3{
+    font-size:35px;
+  }
+  .ul p{
+    font-size:25px;
+  }
+  }
