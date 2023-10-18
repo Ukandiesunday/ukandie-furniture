@@ -216,21 +216,25 @@ body{
 }
 /***************Form******************/
 #form{
+  padding:20px 0;
   margin-top:6rem;
   background-color:var( --light-blue-04);
+  
+ 
 }
-
-.container-form{
+.container-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap:30px;
   padding:10px 10%;
 }
-
 form{
   display:flex;
   justify-content: center;
-  flex-wrap:wrap;
   flex-direction: column;
   border-radius:10px;
-  box-sizing: border-box;
+  justify-items: center;
+  margin:10px auto;
 }
 .text{
   color:var(--red);
@@ -269,16 +273,14 @@ input,textarea{
 .btn:hover{
   outline:5px solid var(--blue-01);
 }
-.container-flex{
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
+
 
 .contact{
   color:var(--red);
- margin-top:30px;
   font-size:17px;
+  margin:25px auto;
+  padding:20px 10%;
+  text-align:center;
 }
 .contact p, .contact i{
   padding:7px;
@@ -310,10 +312,10 @@ input, textarea{
   font-size:18px;
 }
 
-form, .contact{
-  flex-basis:100%;
+.contact{
+  text-align: center;
+  margin:20px auto;
 }
-
 .container p{
   font-size:20px;
 }
