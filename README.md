@@ -1,0 +1,1 @@
+This website is built with Html, Css and javascript. Here you can fetch different categories of furniture, view automatic scrolls of clients' attestation,enjoy cool animations,  check our service page and lots more.  
