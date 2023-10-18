@@ -217,29 +217,34 @@ body{
 /***************Form******************/
 #form{
   margin-top:6rem;
-  background-color:var( --light-blue-04)
+  background-color:var( --light-blue-04);
 }
+
+.container-form{
+  padding:10px 10%;
+}
+
 form{
   display:flex;
   justify-content: center;
   flex-wrap:wrap;
   flex-direction: column;
   border-radius:10px;
+  box-sizing: border-box;
 }
 .text{
   color:var(--red);
   font-size:20px;
   margin-bottom:20px;
-  padding-right:20px;
   text-align: left;
   text-transform: capitalize;
 }
 input,textarea{
   font-size:16px;
-  padding:10px;
+  padding:6px;
   border-radius:5px;
   border:none;
-  box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+  box-shadow: 0 0 5px rgba(0,0,0, 0.3);
 }
 
 :is(input,textarea)::placeholder{
@@ -304,6 +309,11 @@ input,textarea{
 input, textarea{
   font-size:18px;
 }
+
+form, .contact{
+  flex-basis:100%;
+}
+
 .container p{
   font-size:20px;
 }
