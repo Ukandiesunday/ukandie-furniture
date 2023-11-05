@@ -18,7 +18,6 @@ window.onscroll = function(){
   const scrollHeight = window.scrollY;
   const navHeight = nav.getBoundingClientRect().height;
 scrollHeight > navHeight ? nav.classList.add("fixed-nav"):nav.classList.remove("fixed-nav");
-console.log(scrollHeight)
 
 scrollHeight & sideBar.classList.remove("toggle-sidebar")||menuToggle.classList.remove("toggle");
 

@@ -90,27 +90,28 @@ ul  a:hover::after{
 .header-text{
   font-size:50px;
   position:absolute;
-  top:40%;
-  left:-50%;
+  top:-43%;
+  left:50%;
   transform:translate(-50%, -50%);
   text-align:center;
   color:var(--light-blue-01);
 }
 .header-text1{
   position:absolute;
-  top:-55%;
+  top:55%;
+ left:100%;
   margin-top:20px;
   text-align:center;
   color:var(--red);
   padding:4% 25%;
 }
 .header-text1.text2{
-  top:55%;
-  transition:all 2s ;
+  left:0;
+  transition:all 5s ;
 }
 .header-text.text1{
-  left:50%;
-  transition:var(--transition-1); ;
+  top:43%;
+  transition: all 1.5s ;
 }
 header p {
   position:absolute;

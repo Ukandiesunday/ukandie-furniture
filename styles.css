@@ -35,7 +35,7 @@ body{
   padding:80px 0;
 }
 .container{
-  padding:10px 10%;
+  padding:10px 5%;
   text-align: center;
 }
 .sub-header{
@@ -46,7 +46,9 @@ body{
 .btns-container{
   margin:15px 10px;
   font-size:17px;
+  white-space: nowrap;
 }
+
 .btns{
   font-size:17px;
   padding-inline:10px;
@@ -63,7 +65,14 @@ body{
 .btns:hover{
   background:var(--light-blue-02);
   color:var(--blue-01);
-  outline:5px solid var(  --blue-01);
+  outline:3px solid var(  --blue-01);
+}
+.center{
+  width:100%;
+  max-width: 80%;
+  margin:0 auto;
+  padding:0 30px;
+
 }
 .menu-grid{
   display:grid;
@@ -119,6 +128,10 @@ body{
 .desc-container, h4 {
   margin:15px auto;
   text-align:left;
+  line-height: 1.5;
+}
+.service-info{
+  line-height: 1.5;
 }
 .chat{
   position: relative;
@@ -177,6 +190,7 @@ body{
   display:flex;
   gap:15px;
   justify-content: space-between;
+  position:relative;
 }
 .prev-btn,
 .next-btn{
@@ -186,20 +200,15 @@ body{
   cursor: pointer;
   margin-inline:10px;
 }
-.ran-btn{
-  padding-inline:10px;
-  border-radius:3px;
-  cursor: pointer;
-  font-size:17px;
-}
+
 
 .top-link{
   position:fixed;
   bottom:-100px;
-  right:40px;
+  right:30px;
   transition:all 1s;
   background-color:var(--gold);
- padding:7px;
+ padding:4px;
  border-radius:7px;
   cursor: pointer;
   color:var(--white);
@@ -213,18 +222,19 @@ body{
 }
  
 .top-link.show-link{
-  bottom:100px;
+  bottom:60px;
 }
 /***************Form******************/
 #form{
   padding:20px 0;
   margin-top:6rem;
-  background-color:var( --light-blue-04);
-  
- 
 }
 .container-form{
   padding:20px 15%;
+  max-width:80%;
+  width:100%;
+  margin:0 auto;
+ 
 }
 form{
   flex-direction: column;
@@ -247,7 +257,8 @@ input,textarea{
   padding:6px;
   border-radius:5px;
   border:none;
-  box-shadow: 0 0 5px rgba(0,0,0, 0.3);
+  background:#edeef0;
+  box-shadow: 0 0 4px rgba(0,0,0, 0.3);
 }
 
 :is(input,textarea)::placeholder{
@@ -258,7 +269,7 @@ input,textarea{
   caret-color: var(--red)
 }
 .btn{
-  font-size:17px;
+  font-size:16px;
   padding:10px;
   background: var(--light-blue-01);
   color:var(--white);
@@ -276,7 +287,7 @@ input,textarea{
 
 .contact{
   color:var(--red);
-  font-size:17px;
+  font-size:16px;
   margin:25px auto;
   padding:20px 15%;
   text-align:center;
@@ -302,13 +313,14 @@ input,textarea{
   padding: 10px 0 40px 0;
   text-align: center;
   background:var(--light-blue-01);
+  font-size:14px;
 }
 #footer span{
   color:var(--red);
 }
 @media (max-width:768px){
 input, textarea{
-  font-size:18px;
+  font-size:14px;
 }
 
 .contact{
@@ -316,7 +328,18 @@ input, textarea{
   margin:20px auto;
 }
 .container p{
+  font-size:14px;
+}
+.center{
+  max-width:100%;
+}
+.sub-header{
   font-size:20px;
 }
-
+.btns-container{
+  overflow-x: scroll;
+}
+#footer{
+  margin:0 auto;
+}
 }

@@ -104,16 +104,16 @@ img:"data/tv-shelf2.jpg"
 
  export const client = [
   {img:"data/client-1.jpg",
-info:" I want to return a hand full accolades to ukandie furniture for turning my home into a comfortable place.Each time I look around I'd feel statisfied.",
+info:" I want to return a hand full accolades to Anie & Sons furniture for turning my home into a comfortable place.Each time I look around I'd feel statisfied.",
 name:"Mr. Peter Harrison, Lagos Nigeria"
 },
   {img:"data/client2.jpg",
-info:"A great shout out to ukandie furniture services for  turning their creativity into realizing a paradise for my living room, I have used their products for many years and they are awesome.",
+info:"A great shout out to Anie & Sons furniture services for  turning their creativity into realizing a paradise for my living room, I have used their products for many years and they are awesome.",
 name:"Mrs. Benson Charley, Abuja"},
   {img:"data/client3.jpg",
-info:"I can not forget to thank ukandie furniture for my interior decorations, their talented staff and designers painstakenly work through my desires.",
+info:"I can not forget to thank Anie & Sons furniture for my interior decorations, their talented staff and designers painstakenly work through my desires.",
 name:"Mr. John"},
   {img:"data/client4.jpg",
-info:" My apartment has become one of the best in the world via ukandie furniture handy works, I totally recommend them for any one who needs a captiviting and durable furniture",
+info:" My apartment has become one of the best in the world via Anie & Sons furniture handy works, I totally recommend them for any one who needs a captiviting and durable furniture",
 name:"Mr.Smith Peter, Ghana"}
 ]
